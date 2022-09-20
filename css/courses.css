@@ -1,0 +1,271 @@
+/* variables */
+
+.root {
+    --var-main-color: #ECEBEC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0071FF;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* start main menue  */
+
+.main-menu {
+    width: 250px;
+    min-width: 150px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.1);
+    height: 100vmax;
+    position: sticky;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-menu header img {
+    display: none;
+}
+
+.main-menu header {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.main-menu header::before {
+    content: '';
+    background-color: black;
+    width: 120%;
+    height: 3px;
+    position: absolute;
+    bottom: -20px;
+    left: -10%;
+}
+
+.main-menu header:after {
+    content: '';
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    left: 42.5%;
+    border: 4px solid #fff;
+}
+
+.main-menu ul a {
+    text-decoration: none;
+}
+
+.main-menu ul a li {
+    color: #000;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.main-menu ul #Courses {
+    background-color: #f3f3f3;
+}
+
+.main-menu ul a li:hover {
+    background-color: #f3f3f3;
+}
+
+.main-menu ul a li i {
+    margin-right: 10px;
+}
+
+@media(max-width:768px) {
+    .main-menu {
+        max-width: 80px;
+        min-width: auto;
+        gap: 10px;
+        text-align: center;
+    }
+    .main-menu span {
+        display: none;
+    }
+    .main-menu ul li {
+        text-align: center;
+    }
+    .main-menu ul li i {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-menu header {
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #000;
+    }
+    .main-menu header .logo {
+        display: block;
+    }
+    .main-menu header p {
+        display: none;
+    }
+    .main-menu header::after,
+    .main-menu header::before {
+        display: none;
+    }
+}
+
+
+/* end main menu  */
+
+
+/* start main container  */
+
+.container {
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.container .main-header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.container .profile-notifications {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.container .profile-notifications i {
+    font-size: 24px;
+    font-weight: 200;
+    margin: auto 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.container .profile-notifications i::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: -4px;
+    right: -1.5px;
+}
+
+.container .main-header .logo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.container .search {
+    border: 3px solid #ECEBEC;
+    width: 180px;
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 13px;
+}
+
+.container .search i {
+    margin-right: 5px;
+    color: rgb(153, 153, 153);
+}
+
+.container .inp-search {
+    border: none;
+    width: 85%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container .inp-search:focus {
+    border: none;
+    width: 85%;
+    outline: none;
+}
+
+.container .inp-search::placeholder {
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+}
+
+.container .inp-search:focus::placeholder {
+    color: #fff;
+}
+
+
+/* end main container  */
+
+
+/* start sec-container  */
+
+.sec-container {
+    padding: 20px;
+    background-color: #F2F5FC;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-container .sec-header {
+    font-size: 24px;
+    width: fit-content;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sec-container .sec-header::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+}
+
+.sec-container .sec-header::after {
+    content: '';
+    width: 30%;
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    bottom: -15px;
+}

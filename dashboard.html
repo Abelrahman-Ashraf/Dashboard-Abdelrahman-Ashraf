@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=
+    Open+Sans:wght@300;400;500;600;700;800&family=Poppins
+    :wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- start main-menu  -->
+    <div class="main-menu">
+        <header>
+            <img style="width:35px ;border-radius: 50%;" class="logo" src="images/My Logo.jpg" alt="">
+            <p>Abdelrahman</p>
+        </header>
+        <ul>
+            <a href="dashboard.html">
+                <li id="Dashboard"><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></li>
+            </a>
+            <a href="setting.html">
+                <li id="Settings"><i class="fa-solid fa-gear"></i><span>Settings</span></li>
+            </a>
+            <a href="profile.html">
+                <li id="Profile"><i class="fa-regular fa-user"></i><span>Profile</span></li>
+            </a>
+            <a href="projects.html">
+                <li id="Projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></li>
+            </a>
+            <a href="courses.html">
+                <li id="Courses"><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></li>
+            </a>
+            <a href="friends.html">
+                <li id="Friends"><i class="fa-regular fa-circle-user"></i><span>Friends</span></li>
+            </a>
+            <a href="files.html">
+                <li id="Files"><i class="fa-regular fa-file"></i><span>Files</span></li>
+            </a>
+            <a href="plans.html">
+                <li id="Plans"><i class="fa-regular fa-credit-card"></i><span>Plans</span></li>
+            </a>
+        </ul>
+    </div>
+    <!-- end main-menu  -->
+    <!-- start main-container  -->
+    <div class="container">
+        <!-- start main header  -->
+        <header class="main-header">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="inp-search" class="inp-search" type="text" placeholder="Search Keyword">
+            </div>
+            <div class="profile-notifications">
+                <i class="fa-regular fa-bell"></i>
+                <img class="logo" src="images/My Logo.jpg" alt="">
+            </div>
+        </header>
+        <!-- end main header  -->
+        <!-- start sec-container  -->
+        <div class="sec-container">
+            <!-- start sec header  -->
+            <header class="sec-header">
+                <h2>Dashboard</h2>
+            </header>
+            <!-- end sec header  -->
+            <!-- start content -->
+            <div class="content">
+                <!-- start features  -->
+                <div class="features">
+                    <!-- start welcome card  -->
+                    <div class="welcome section">
+                        <div class="welcome-section">
+                            <div class="title">
+                                <h2>Welcome</h2>
+                                <p>Abdelrahman</p>
+                            </div>
+                            <div class="images">
+                                <img style="width: 250px;" src="images/welcome.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about-section">
+                            <div class="profile-logo">
+                                <img style="width:60px ;border-radius: 50%;height: 60px; " src="images/me.jpg" alt="">
+                            </div>
+                            <div class="about">
+                                <div class="me">
+                                    <h2>Abdelraham Ashraf</h2>
+                                    <p>Developer</p>
+                                </div>
+                                <div class="my-project">
+                                    <h2>20</h2>
+                                    <p>Projects</p>
+                                </div>
+                                <div class="my-earned">
+                                    <h2>$1000</h2>
+                                    <p>Earned</p>
+                                </div>
+                            </div>
+                            <div class="btn-profile">
+                                <a href="profile.html"><button id="btn-profile">Profile</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end welcome card  -->
+                    <!-- start quick-draft card  -->
+                    <div class="quick-draft section ">
+                        <div class="title">
+                            <h2>Quick Draft</h2>
+                            <p>Write A Draft For Your Idea</p>
+                        </div>
+                        <div class="form">
+                            <form action="">
+                                <input id="title" class="title input" type="text">
+                                <label class="title-label" for="title">Title</label>
+                                <textarea name="text" id="your-thought" class="your-thought input"></textarea>
+                                <label class="your-thought-label" for="your-thought">Your Thought</label>
+                                <input id="save" class="save" type="submit" value="Save">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end quick-draft card  -->
+                    <!-- start yearly-target card  -->
+                    <div class="yearly-target section">
+                        <div class="title">
+                            <h2>Yearly Target</h2>
+                            <p>Targets Of The Year With Progress</p>
+                        </div>
+                        <div class="targets">
+                            <div class="money target">
+                                <div class="target-icon">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                                <div class="about-target">
+                                    <h2>Money</h2>
+                                    <p>$2.000</p>
+                                    <div class="percentage">
+                                        <span class="mony-span"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects target">
+                                <div class="target-icon">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                </div>
+                                <div class="about-target">
+                                    <h2>Projects</h2>
+                                    <p>20</p>
+                                    <div class="percentage">
+                                        <span class="projects-span"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team target">
+                                <div class="target-icon">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <div class="about-target">
+                                    <h2>Team</h2>
+                                    <p>12</p>
+                                    <div class="percentage">
+                                        <span class="team-span"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end yearly-target card  -->
+                    <!-- start tickets-statistics card  -->
+                    <div class="tickets-statistics section">
+                        <div class="title">
+                            <h2>Tickets Statistics</h2>
+                            <p>Everything About Support Tickkets</p>
+                        </div>
+                        <div class="cards">
+                            <div class="card total">
+                                <div class="icon">
+                                    <i class="fa-regular fa-rectangle-list"></i>
+                                </div>
+                                <h2>2500</h2>
+                                <p>Total</p>
+                            </div>
+                            <div class="card pending">
+                                <div class="icon">
+                                    <i class="fa-solid fa-spinner"></i>
+                                </div>
+                                <h2>500</h2>
+                                <p>Pending</p>
+                            </div>
+                            <div class="card closed">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+                                <h2>1900</h2>
+                                <p>Closed</p>
+                            </div>
+                            <div class="card deleted">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-xmark"></i>
+                                </div>
+                                <h2>100</h2>
+                                <p>Deleted</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tickets-statistics card  -->
+                    <!-- start latest-news card  -->
+                    <div class="latest-news section">
+                        <div class="title">
+                            <h2>Lastest News</h2>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="images/lastest-news1.jpg" alt="">
+                                </div>
+                                <div class="text-content">
+                                    <div class="text">
+                                        <h2>Created SASS Section</h2>
+                                        <p>New SASS Examples & Tutorials</p>
+                                    </div>
+                                    <div class="days-ago">
+                                        <p><span>3</span> Days Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="images/latest-news2.jpg" alt="">
+                                </div>
+                                <div class="text-content">
+                                    <div class="text">
+                                        <h2>Changed The Design</h2>
+                                        <p>A Brand New Website Design</p>
+                                    </div>
+                                    <div class="days-ago">
+                                        <p><span>5</span> Days Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="images/latest-news3.jpg" alt="">
+                                </div>
+                                <div class="text-content">
+                                    <div class="text">
+                                        <h2>Team Increased</h2>
+                                        <p>3 Delvelopers Joined The Team</p>
+                                    </div>
+                                    <div class="days-ago">
+                                        <p><span>7</span> Days Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="images/latest-news4.jpg" alt="">
+                                </div>
+                                <div class="text-content">
+                                    <div class="text">
+                                        <h2>Added Payment Gateway</h2>
+                                        <p>Many New Payment Gateways Added</p>
+                                    </div>
+                                    <div class="days-ago">
+                                        <p><span>9</span> Days Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end latest-news card  -->
+                    <!-- start latest-tasks card  -->
+                    <div class="latest-tasks section">
+                        <div class="title">
+                            <h2>Latest Tasks</h2>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Record One New Video</h3>
+                                <p>Record Python Create Exe Project</p>
+                            </div>
+                            <div class="card">
+                                <h3>Write Artical</h3>
+                                <p>Write Low Level vs High Level Languages</p>
+                            </div>
+                            <div class="card">
+                                <h3>Finish Project</h3>
+                                <p>Publish Academy Programming Project</p>
+                            </div>
+                            <div class="card">
+                                <del class="title-del"><h3>Attend The Meeting</h3></del>
+                                <del class="task-del"><p>Attend Project Business Analysis Meeting</p></del>
+                            </div>
+                            <div class="card">
+                                <h3>Finish Lesson</h3>
+                                <p>Finish Teaching Flex Box</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end latest-tasks card  -->
+                    <!-- start top-search-items card  -->
+                    <div class="top-search-items section">
+                        <div class="title">
+                            <h2>Top Search Items</h2>
+                            <div class="items-content">
+                                <div class="items items-title">
+                                    <div class="keyword">Keyword</div>
+                                    <div class="search-count">Search Count</div>
+                                </div>
+                                <div class="items">
+                                    <div class="keyword">Programing</div>
+                                    <div class="search-count">220</div>
+                                </div>
+                                <div class="items">
+                                    <div class="keyword">JavaScript</div>
+                                    <div class="search-count">180</div>
+                                </div>
+                                <div class="items">
+                                    <div class="keyword">PHP</div>
+                                    <div class="search-count">160</div>
+                                </div>
+                                <div class="items">
+                                    <div class="keyword">Code</div>
+                                    <div class="search-count">145</div>
+                                </div>
+                                <div class="items">
+                                    <div class="keyword">Design</div>
+                                    <div class="search-count">110</div>
+                                </div>
+                                <div class="items">
+                                    <div class="keyword">Logic</div>
+                                    <div class="search-count">95</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end top-search-items card  -->
+                    <!-- start latest-uploads card  -->
+                    <div class="latest-uploads section">
+                        <div class="title">
+                            <h2>Latest Uploads</h2>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/pdf.JPG" alt="">
+                                <div class="text">
+                                    <div class="text-content">
+                                        <h3>My-Pdf-File.pdf</h3>
+                                        <p>Abdelrahman</p>
+                                    </div>
+                                    <div class="size">
+                                        2.9mb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/avi.JPG" alt="">
+                                <div class="text">
+                                    <div class="text-content">
+                                        <h3>My-Video-File.avi</h3>
+                                        <p>Admin</p>
+                                    </div>
+                                    <div class="size">
+                                        4.9mb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/psd.JPG" alt="">
+                                <div class="text">
+                                    <div class="text-content">
+                                        <h3>My-Psd-File.pdf</h3>
+                                        <p>Venom</p>
+                                    </div>
+                                    <div class="size">
+                                        4.5mb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/Zip.JPG" alt="">
+                                <div class="text">
+                                    <div class="text-content">
+                                        <h3>My-Zip-File.pdf</h3>
+                                        <p>User</p>
+                                    </div>
+                                    <div class="size">
+                                        8.9mb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/dll.JPG" alt="">
+                                <div class="text">
+                                    <div class="text-content">
+                                        <h3>My-DLL-File.pdf</h3>
+                                        <p>Admin</p>
+                                    </div>
+                                    <div class="size">
+                                        4.9mb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/eps.JPG" alt="">
+                                <div class="text">
+                                    <div class="text-content">
+                                        <h3>My-Eps-File.pdf</h3>
+                                        <p>Designer</p>
+                                    </div>
+                                    <div class="size">
+                                        8.9mb
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end latest-uploads card  -->
+                    <!-- start current-project-progress card  -->
+                    <div class="current-project-progress section">
+                        <div class="title">
+                            <h2>Current Projects Progress</h2>
+                        </div>
+                        <div class="progresses">
+                            <div class="mark"><span></span></div>
+                            <div class="progress">
+                                <p>Got The Project</p>
+                            </div>
+                        </div>
+                        <div class="progresses">
+                            <div class="mark"><span></span></div>
+                            <div class="progress">
+                                <p>Started The Project</p>
+                            </div>
+                        </div>
+                        <div class="progresses">
+                            <div class="mark"><span></span></div>
+                            <div class="progress">
+                                <p>The Project About To Finish</p>
+                            </div>
+                        </div>
+                        <div class="progresses">
+                            <div class="mark"></div>
+                            <div class="progress">
+                                <p>Test The Project</p>
+                            </div>
+                        </div>
+                        <div class="progresses">
+                            <div class="mark last-mark"></div>
+                            <div class="progress">
+                                <p>Finish The Project & Get Money</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end current-project-progress card  -->
+                    <!-- start reminders card -->
+                    <div class="reminders section">
+                        <div class="title">
+                            <h2>Reminders</h2>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="dot-area blue-dot-area">
+                                    <span class="blue dot "></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Check My Tasks List</h3>
+                                    <p>28/9/2002 - 12:00am</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="dot-area green-dot-area">
+                                    <span class="green dot"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Check My Tasks List</h3>
+                                    <p>26/10/2002 - 12:00am</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="dot-area orange-dot-area">
+                                    <span class="arange dot"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Check My Tasks List</h3>
+                                    <p>5/11/2002 - 12:00am</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="dot-area red-dot-area">
+                                    <span class="red dot"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Check My Tasks List</h3>
+                                    <p>20/12/2002 - 12:00am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end reminders card -->
+                    <!-- start latest-post card -->
+                    <div class="latest-post section">
+                        <div class="title">
+                            <h2>Latest Post</h2>
+                        </div>
+                        <div class="post">
+                            <div class="about-me">
+                                <img style="width:50px ;border-radius:50%;height:50px" src="images/me.jpg" alt="">
+                                <div class="text">
+                                    <h3>Abdelrahman Ashraf</h3>
+                                    <p>About <span>3</span> <span>Hours</span> Ago</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sapiente! Blanditiis voluptatum distinctio aspernatur porro veniam harum quasi, quisquam quam laborum vel est expedita commodi vitae voluptas. Assumenda, sit
+                                    inventore.
+                                </p>
+                            </div>
+                            <div class="reacted">
+                                <div class="loves">
+                                    <p><i class="fa-regular fa-heart"></i> 1.8K</p>
+                                </div>
+                                <div class="comments">
+                                    <p><i class="fa-regular fa-comments"></i> 550</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end latest-post card -->
+                    <!-- start social-media-stats card  -->
+                    <div class="social-media-stats section">
+                        <div class="title">
+                            <h2>Social Media Stats</h2>
+                        </div>
+                        <div class="cards">
+                            <div class="card twitter-card">
+                                <div class="icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="about">
+                                    <div class="text-about">
+                                        <p>2K Followers</p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://twitter.com/EkbYi70bx6kz6zF">follow</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card facebook-card">
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="about">
+                                    <div class="text-about">
+                                        <p>20K Like</p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://www.facebook.com/profile.php?id=100065273530319">Like</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card youtube-card">
+                                <div class="icon">
+                                    <i style="color: #fff;" class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="about">
+                                    <div class="text-about">
+                                        <p>1K Subs</p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://www.youtube.com/channel/UCjKzdVrIY-cq95mgiQbnvsQ">Subscribe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card linkedin-card">
+                                <div class="icon">
+                                    <i style="color: #fff;" class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="about">
+                                    <div class="text-about">
+                                        <p>2K Followers</p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://www.linkedin.com/in/abdelrahman-ashraf-497159243/">follow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end social-media-stats card  -->
+                    <!-- end projects-table  -->
+                </div>
+                <!-- start projects-table  -->
+                <div class="projects-table section">
+                    <div class="title">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="table-area">
+                        <table>
+                            <thead>
+                                <th>Project Name</th>
+                                <th>Finish Date</th>
+                                <th>Client</th>
+                                <th>Price</th>
+                                <th>Team</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Venom Temblate</td>
+                                    <td>10 May 2022</td>
+                                    <td>For Me</td>
+                                    <td>_</td>
+                                    <td>
+                                        <img src="images/1.png" alt="">
+                                        <img src="images/7.png" alt="">
+                                        <img src="images/6.png" alt="">
+                                        <img src="images/4.png" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="status pending">
+                                            pending
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Softy Pinko</td>
+                                    <td>20 Oct 2021</td>
+                                    <td>For Me</td>
+                                    <td>_</td>
+                                    <td>
+                                        <img src="images/1.png" alt="">
+                                        <img src="images/7.png" alt="">
+                                        <img src="images/6.png" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="status in-progress">
+                                            In Progress
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pictures Editor</td>
+                                    <td>05 Sep 2021</td>
+                                    <td>Mostafa</td>
+                                    <td>$200</td>
+                                    <td>
+                                        <img src="images/1.png" alt="">
+                                        <img src="images/7.png" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="status completed">
+                                            Completed
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>XO Game</td>
+                                    <td>22 May 2021</td>
+                                    <td>Mahmoud</td>
+                                    <td>$300</td>
+                                    <td>
+                                        <img src="images/1.png" alt="">
+                                        <img src="images/7.png" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="status completed">
+                                            Completed
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cruds Project</td>
+                                    <td>24 May 2021</td>
+                                    <td>Super Market</td>
+                                    <td>$2000</td>
+                                    <td>
+                                        <img src="images/1.png" alt="">
+                                        <img src="images/7.png" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="status rejected">
+                                            Rejected
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tasks Project</td>
+                                    <td>01 Mar 2021</td>
+                                    <td>Salma</td>
+                                    <td>$50</td>
+                                    <td>
+                                        <img src="images/1.png" alt="">
+                                        <img src="images/7.png" alt="">
+                                        <img src="images/6.png" alt="">
+                                        <img src="images/4.png" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="status completed">
+                                            Completed
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- end features  -->
+            </div>
+            <!-- end content -->
+        </div>
+        <!-- end sec-container  -->
+    </div>
+    <!-- end main-container  -->
+</body>
+
+</html>
