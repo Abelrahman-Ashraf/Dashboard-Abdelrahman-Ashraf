@@ -1476,6 +1476,29 @@ p {
     border-collapse: collapse;
 }
 
+.projects-table .table-area table .status {
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.projects-table .table-area table .pending {
+    background-color: var(--color7);
+}
+
+.projects-table .table-area table .in-progress {
+    background-color: var(--color5);
+}
+
+.projects-table .table-area table .completed {
+    background-color: var(--color9);
+}
+
+.projects-table .table-area table .rejected {
+    background-color: var(--color11);
+}
+
 
 /* end projects-table  */
 
